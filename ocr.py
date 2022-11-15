@@ -53,8 +53,7 @@ def ocr(targetfile):
 
 count_f = 0
 total_pics = len(paths)
-print(total_pics)
-input()
+
 for i in range(2):
     for f in paths:
         count_f +=1
