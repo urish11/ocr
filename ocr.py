@@ -103,5 +103,4 @@ ok_pics = len(paths) - del_pics
 print(f'result: censored pics:{del_pics} , passed pics:{ok_pics}')
 print('censored words: ' + str(matched_words))
 print(r'thats one filthy mouth... :)')
-with open(r'C:\Users\uri\ocr_over_log.txt', 'a') as f:
-    f.write((str(datetime.datetime.now()) + str(f' result: del pics:{del_pics} , passed pics:{ok_pics}\n')))
+
