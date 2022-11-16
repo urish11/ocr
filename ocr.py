@@ -52,7 +52,7 @@ def ocr(targetfile):
     return response
 
 count_f = 0
-total_pics = len(paths)
+total_pics = len(paths)*2
 
 for i in range(2):
     for f in paths:
