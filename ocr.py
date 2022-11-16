@@ -32,7 +32,7 @@ for root, dirs, files in os.walk(os.path.abspath(folder)):
     for file in files:
         # print(os.path.join(root, file))
         paths.append(os.path.join(root, file))
-#copy_tree(folder, folder + r'\uncensored')
+copy_tree(folder, folder + r'\uncensored')
 
 
 def ocr(targetfile):
