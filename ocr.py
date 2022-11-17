@@ -51,7 +51,7 @@ def ocr(targetfile):
     # final_response = response_cmd.replace("\n", "\t")
 
     return response
-print(f[0])
+
 count_f = 0
 total_pics = len(paths)*2
 
