@@ -40,9 +40,11 @@ def ocr(targetfile):
     # os.system(f'cd C:\Program Files\Tesseract-OCR') path = folder + r"\"" + f print(path) response = (os.popen(
     # f'tesseract "{targetfile}"  - -l eng -c tessedit_char_whitelist="
     # abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" ').read())
-    response = image_to_data(targetfile, 'eng', output_type='data.frame',
+    try:
+        response = image_to_data(targetfile, 'eng', output_type='data.frame',
                              config='tessedit_char_whitelist=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"')
-
+    except:
+        pass
     # response= str(response)
     # list1 = list(response.split(" "))
     # response = str(response.lower())
