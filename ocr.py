@@ -51,13 +51,13 @@ def ocr(targetfile):
     # final_response = response_cmd.replace("\n", "\t")
 
     return response
-
+print(f[0])
 count_f = 0
 total_pics = len(paths)*2
 
 for i in range(2):
     for f in paths:
-        print(f)
+        
         count_f +=1
         print(f'proccesing pic {count_f} out of {total_pics}  ')
         print(matched_words)
