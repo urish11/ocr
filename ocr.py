@@ -68,7 +68,7 @@ for i in range(2):
         xxx = ocr(f)
 
         # print(result)
-        print(xxx)
+        #print(xxx)
 
         df = pd.DataFrame(xxx,
                           columns=['level', 'page_num', 'block_num', 'par_num', 'line_num', 'word_num', 'left', 'top',
