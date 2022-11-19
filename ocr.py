@@ -108,7 +108,7 @@ for i in range(2):
 ok_pics = len(paths) - del_pics
 print(f'result: censored pics:{del_pics} , passed pics:{ok_pics}')
 count_cencored = str(matched_words.count())
-print(f'"words censored: " {count_cencored}'
+print(f'"words censored: " {count_cencored}')
 print('censored words: ' + str(matched_words))
 print(r'thats one filthy mouth... :)')
 
