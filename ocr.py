@@ -19,6 +19,7 @@ cnt = 0
 print('blacklist: ',blacklist)
 print(str(sys.argv[1]))
 folder = str(sys.argv[1])
+passes = int(sys.argv[2])
 # folder = r'C:\Users\uri\Downloads\scmmr extra3'
 # files = os.listdir(folder)
 # files = files.append(os.listdir(folder))
@@ -59,9 +60,9 @@ def ocr(targetfile):
         pass
     
 count_f = 0
-total_pics = len(paths)*3
+total_pics = len(paths)*passes
 
-for i in range(3):
+for i in range(passes):
     for f in paths:
         count_f +=1 
         print(f'proccesing pic {count_f} out of {total_pics} {f}  ')
