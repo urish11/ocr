@@ -62,7 +62,7 @@ total_pics = len(paths)*3
 
 for i in range(3):
     for f in paths:
-        count_f +=1
+        count_f +=1 
         print(f'proccesing pic {count_f} out of {total_pics} {f}  ')
         print(matched_words)
 
