@@ -59,9 +59,9 @@ def ocr(targetfile):
         pass
     
 count_f = 0
-total_pics = len(paths)*3
+total_pics = len(paths)*5
 
-for i in range(3):
+for i in range(5):
     for f in paths:
         count_f +=1 
         print(f'proccesing pic {count_f} out of {total_pics} {f}  ')
