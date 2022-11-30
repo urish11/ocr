@@ -64,7 +64,7 @@ total_pics = len(paths)*5
 for i in range(5):
     for f in paths:
         count_f +=1 
-        print(f'proccesing pic {count_f} out of {total_pics} {f} pass {i+1} out 5 ')
+        print(f'proccesing pic {count_f} out of {total_pics} {f} pass {i+1} out of 5 ')
         print(matched_words)
 
 
