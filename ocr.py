@@ -37,7 +37,7 @@ copy_tree(folder, folder + r'\uncensored')
 
 
 def ocr(targetfile):
-    #os.chdir('C:\Program Files\Tesseract-OCR')
+    os.chdir('C:\Program Files\Tesseract-OCR')
     # os.system(f'cd C:\Program Files\Tesseract-OCR') path = folder + r"\"" + f print(path) response = (os.popen(
     # f'tesseract "{targetfile}"  - -l eng -c tessedit_char_whitelist="
     # abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" ').read())
