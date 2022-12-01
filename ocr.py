@@ -42,6 +42,7 @@ def ocr(targetfile):
     # f'tesseract "{targetfile}"  - -l eng -c tessedit_char_whitelist="
     # abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" ').read())
     try:
+        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
         response = image_to_data(targetfile, 'eng', output_type='data.frame',
                              config='tessedit_char_whitelist=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"')
     except:
