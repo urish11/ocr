@@ -86,13 +86,11 @@ for i in range(5):
 
         except:
             pass
-        try:
-            if matched_rows.empty:
-                pass
-             else:
-                del_pics += 1
-        except:
+
+        if matched_rows.empty:
             pass
+        else:
+            del_pics += 1
 
         # print(len(matched_rows.index))
         # print('xxx', matched_rows["width"].iloc[1])
@@ -115,4 +113,3 @@ count_cencored = str(len(matched_words))
 print("words censored: " ,count_cencored)
 print('censored words: ' + str(matched_words))
 print(r'thats one filthy mouth... :)')
-
