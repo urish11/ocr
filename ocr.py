@@ -90,7 +90,7 @@ for i in range(5):
             if matched_rows.empty:
                 pass
              else:
-             del_pics += 1
+                del_pics += 1
          except:
             pass
 
