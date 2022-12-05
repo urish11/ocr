@@ -89,8 +89,8 @@ for i in range(5):
         try:
             if matched_rows.empty:
                 pass
-          else:
-            del_pics += 1
+             else:
+             del_pics += 1
          except:
             pass
 
