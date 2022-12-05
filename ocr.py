@@ -91,7 +91,7 @@ for i in range(5):
                 pass
              else:
                 del_pics += 1
-         except:
+        except:
             pass
 
         # print(len(matched_rows.index))
