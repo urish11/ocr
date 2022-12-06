@@ -108,7 +108,7 @@ for i in range(5):
             cv2.imwrite(f, image)
 
 ok_pics = len(paths) - del_pics
-print(f'result: censored pics:{del_pics} , passed pics:{ok_pics}')
+print(f'result: censored pics:{del_pics} , clean pics:{ok_pics}')
 count_cencored = str(len(matched_words))
 print("words censored: " ,count_cencored)
 print('censored words: ' + str(matched_words))
