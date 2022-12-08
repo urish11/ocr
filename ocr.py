@@ -93,7 +93,7 @@ for i in range(5):
         if bool(re.findall(blacklist_risky, full_text,re.IGNORECASE)):
             try:
                 os.mkdir(os.path.dirname(f) + r'\highly_risky')
-            else:
+            except:
                 pass
 
             shutil.move(f, str(os.path.dirname(f) + r'\highly_risky'))
