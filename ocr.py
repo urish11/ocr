@@ -98,8 +98,8 @@ for i in range(5):
 
 
 
-        matched_rows_risky = df[df["text"].str.contains(blacklist_risky, na=False, regex=True, case=False)]
-        print(matched_rows_risky.bool)
+
+
 
         if matched_rows.empty:
             pass
