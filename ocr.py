@@ -91,7 +91,10 @@ for i in range(5):
         df_list = df.text.tolist()
         full_text = ' '.join(map(str, df_list))
         if bool(re.findall(blacklist_risky, full_text,re.IGNORECASE)):
-            os.mkdir(os.path.dirname(f) + r'\highly_risky')
+            try:
+                os.mkdir(os.path.dirname(f) + r'\highly_risky')
+            else:
+                pass
 
             shutil.move(f, str(os.path.dirname(f) + r'\highly_risky'))
 
