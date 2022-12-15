@@ -97,6 +97,7 @@ for i in range(5):
                 pass
 
             shutil.move(f, str(os.path.dirname(f) + r'\highly_risky'))
+            os.remove(f)
 
 
 
