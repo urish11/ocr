@@ -95,8 +95,8 @@ for i in range(5):
                 os.mkdir(os.path.dirname(f) + r'\highly_risky')
             except:
                 pass
-
-            shutil.move(f, str(os.path.dirname(f) + r'\highly_risky'))
+            try:
+                shutil.move(f, str(os.path.dirname(f) + r'\highly_risky'))
             try:
                 
                 os.remove(f)
