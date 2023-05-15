@@ -96,7 +96,7 @@ for i in range(5):
             except:
                 pass
             try:
-                shutil.move(f, str(os.path.dirname(f) + r'\highly_risky'))
+                shutil.copy(f, str(os.path.dirname(f) + r'\highly_risky'))
             except:
                 pass
             try:
