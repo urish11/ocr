@@ -100,7 +100,7 @@ for i in range(5):
             except:
                 pass
             try:
-                shutil.copy(f, str(os.path.dirname(f) + r'\dontupload'))
+                shutil.move(f, str(os.path.dirname(f) + r'\dontupload'))
             except:
                 pass
             os.remove(f)
