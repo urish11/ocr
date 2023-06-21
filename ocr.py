@@ -106,7 +106,11 @@ for i in range(5):
             except:
                 continue
             print(f)
-            os.remove(f)
+            try:
+                
+                os.remove(f)
+            except:
+                continue
 
 
 
