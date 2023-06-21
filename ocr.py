@@ -106,7 +106,6 @@ for i in range(5):
             except:
                 continue
             print(f)
-            input()
             os.remove(f)
 
 
