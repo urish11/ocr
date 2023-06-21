@@ -66,20 +66,7 @@ total_pics = len(paths) * 5
 
 for i in range(5):
     for f in paths:
-        if bool(re.findall(blacklist_risky, full_text,re.IGNORECASE)):
-            try:
-                os.mkdir(os.path.dirname(f) + r'\dontupload')
-            except:
-                pass
-            try:
-                shutil.copy(f, str(os.path.dirname(f) + r'\dontupload'))
-            except:
-                pass
-            try:
-                
-                os.remove(f)
-            except:
-                pass
+
 
         
         count_f += 1
@@ -98,6 +85,7 @@ for i in range(5):
                           columns=['level', 'page_num', 'block_num', 'par_num', 'line_num', 'word_num', 'left', 'top',
                                    'width', 'height', ' conf', 'text'])
         # print(df[df["text"].str.contains(blacklist, na=False, regex=True)])
+
         try:
             matched_rows = df[df["text"].str.contains(blacklist, na=False, regex=True, case=False)]
 
@@ -106,7 +94,20 @@ for i in range(5):
 
         df_list = df.text.tolist()
         full_text = ' '.join(map(str, df_list))
-
+        if bool(re.findall(blacklist_risky, full_text,re.IGNORECASE)):
+            try:
+                os.mkdir(os.path.dirname(f) + r'\dontupload')
+            except:
+                pass
+            try:
+                shutil.copy(f, str(os.path.dirname(f) + r'\dontupload'))
+            except:
+                pass
+            try:
+                
+                os.remove(f)
+            except:
+                pass
 
 
 
