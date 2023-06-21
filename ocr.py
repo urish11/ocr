@@ -99,10 +99,8 @@ for i in range(5):
                 os.mkdir(os.path.dirname(f) + r'\dontupload')
             except:
                 pass
-            try:
-                shutil.move(f, str(os.path.dirname(f) + r'\dontupload'+os.path.basename))
-            except:
-                pass
+            
+            os.rename(f, str(os.path.dirname(f) + r'\dontupload'+os.path.basename))
 
 
 
