@@ -103,8 +103,6 @@ for i in range(5):
                 shutil.copy(f, str(os.path.dirname(f) + r'\dontupload'))
             except:
                 pass
-
-                
             os.remove(f)
 
 
