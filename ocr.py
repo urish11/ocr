@@ -100,7 +100,7 @@ for i in range(5):
             except:
                 pass
             
-            os.rename(f, str(os.path.dirname(f) + r'\dontupload'+ os.path.basename(f)))
+            shutil.move(f, str(os.path.dirname(f) + r'\dontupload'))
 
 
 
