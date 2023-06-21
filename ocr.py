@@ -101,6 +101,8 @@ for i in range(5):
                 pass
             print('dddd', str(os.path.dirname(f) + r'\\dontupload\\'))
             shutil.move(f, str(os.path.dirname(f) + r'\\dontupload\\'))
+            print(f)
+            input()
             os.remove(f)
 
 
