@@ -99,7 +99,7 @@ for i in range(5):
                 os.mkdir(os.path.dirname(f) + r'\dontupload')
             except:
                 pass
-            
+            print('dddd', str(os.path.dirname(f) + r'\\dontupload\\'))
             shutil.move(f, str(os.path.dirname(f) + r'\\dontupload\\'))
 
 
